@@ -6,6 +6,8 @@
 (set! *warn-on-reflection* true)
 (set! *unchecked-math* true)
 
+(def cp437-10x10 { :file "cp437_10x10.png" :char-width 10 :char-height 10 })
+
 (defn load-glyphs
   "Load raster glyphs with a specific width and height from a file.
   You probably won't need to use this."
@@ -36,8 +38,8 @@
 
 (defn new-renderer
   "Return a new render function that takes a Graphics and tiles and renders the tiles to the Graphics object."
-  [width height font char-width char-height]
-  (let [glyphs (load-glyphs font char-width char-height)
+  [width height { :keys [file char-width char-height] }]
+  (let [glyphs (load-glyphs file char-width char-height)
         glyph-cache-atom (atom {})
         get-glyph (fn [c fg bg]
                     (let [k (str c "-" fg "-" bg)]
