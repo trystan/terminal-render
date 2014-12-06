@@ -6,7 +6,9 @@ Render code page 437 terminal stuff simply. To a Swing Graphics, javascript (TOD
 
 In Leiningen:
 
-[terminal-render "0.1.0"]
+````clojure
+    [terminal-render "0.1.0-SNAPSHOT"]
+````
 
 ## Usage
 
@@ -32,7 +34,7 @@ add-char and add-string can make things easier.
 ````
 ## License
 
-Copyright © 2014 FIXME
+Copyright © 2014 Trystan
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
