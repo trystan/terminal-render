@@ -1,6 +1,6 @@
 # terminal-render
 
-Render terminal stuff simply. To a Swing Graphics, javascript (TODO), or an ANSI terminal (TODO).
+Render code page 437 terminal stuff simply. To a Swing Graphics, javascript (TODO), or an ANSI terminal (TODO).
 
 ## Instalation
 

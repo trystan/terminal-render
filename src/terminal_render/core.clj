@@ -6,7 +6,9 @@
 (set! *warn-on-reflection* true)
 (set! *unchecked-math* true)
 
+(def cp437-9x16 { :file "cp437_9x16.png" :char-width 9 :char-height 16 })
 (def cp437-10x10 { :file "cp437_10x10.png" :char-width 10 :char-height 10 })
+(def cp437-12x12 { :file "cp437_12x12.png" :char-width 12 :char-height 12 })
 
 (defn load-glyphs
   "Load raster glyphs with a specific width and height from a file.
