@@ -72,7 +72,7 @@
   Adds a character (char or int) to a terminal at a specific point.
   If fg or bg is nil, the existing fg or bg is used."
   [m c x y fg bg]
-  (assoc m [x y] {:c c :fg (or fg (get-in m [[x y] :fg])) :bg (or bg (get-in m [[x y] :bg]))}))
+  (assoc m [x y] {:c c :fg (or fg (get-in m [[x y] :fg]) {:r 96 :g 96 :b 96}) :bg (or bg (get-in m [[x y] :bg]) {:r 0 :g 0 :b 0})}))
 
 (defn add-string
   "A convenience function for working with terminal inputs.
