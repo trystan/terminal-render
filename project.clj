@@ -1,4 +1,4 @@
-(defproject terminal-render "0.2.0"
+(defproject terminal-render "0.2.1"
   :description "Render code page 437 terminal stuff simply."
   :url "https://github.com/trystan/terminal-render"
   :license {:name "Eclipse Public License"
